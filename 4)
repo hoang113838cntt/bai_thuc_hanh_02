@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct{
+	char HoTen[100];
+	int MSV;
+	float d1, d2, d3;
+}SinhVien;
+
+typedef struct Node{
+	SinhVien data;
+	struct Node *next;
+}Node;
+
+typedef struct{
+	Node *pHead;
+	Node *pTail;
+}LList;
+
+int main(){
+	LList ds;
+	ds.pHead = NULL;
+	ds.pTail = NULL;
+	return 0;
+}
